@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Event practice </h1>
+<h2>Changes content of paragraph element. </h2>    
+<button onclick="document.getElementById('demo').innerHTML=Date()">   What time is it  </button>
+<p id="demo"> </p>
+
+<h2> makes changes on the element</h2>
+<button onclick="this.innerHTML=Date()"> Time & Date </button>
+<h2>Writing lines of JS in html </h2>
+
+
+<button onclick="displayDate()"> The time is</button>
+<script>
+    function displayDate(){
+        document.getElementById('test').innerHTML=Date();
+    }
+    </script>
+<p id= "test"> </p>
+
+<h2>Check this out </h2>
+<button onclick="fizBuzz()"> What is this </button>
+<script>
+    function fizBuzz(){
+        for(let i =1; i <=100; i++)
+{
+let output=""
+    if(i%3===0){output+="fiz"}
+    if(i%5===0){output+="buzz"}
+     console.log(output)
+}
+return for
+    }
+</script> 
+
+
+<h2>playing around with the date methods is</h2>
+<p id="quiz"></p>
+<script>
+    const d = new Date();
+    document.getElementById('quiz').innerHTML = d.getTime();
+        </script>
+
+</body>
+</html>
